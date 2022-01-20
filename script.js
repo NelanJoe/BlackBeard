@@ -10,8 +10,8 @@ if (page == "login") {
     btn_login.addEventListener("click", function () {
         console.log(uname.value);
         console.log(upass.value);
-        if (uname.value == "trusth17") {
-            if (upass.value == "gaming") {
+        if (uname.value == "admin") {
+            if (upass.value == "123456") {
                 window.location = 'home.html';
             } else {
                 document.getElementById('error_upass').style.display = 'block';
