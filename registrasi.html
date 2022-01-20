@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>register</title>
+
+    <!-- Logo -->
+    <link rel="icon" href="public/image/logo.jpg">
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="https://adminlte.io/themes/v3/dist/css/adminlte.min.css">
+</head>
+
+<body class="hold-transition layout-top-nav layout-navbar-fixed" style="background-color: #f4f6f9;">
+    <div class="wrapper">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark px-4" style="background-color: #255984;">
+            <div class="container-fluid">
+                <a class="navbar-brand " href="#">
+                    <img class="rounded-circle" src="public/image/logo.jpg" width="50" height="50" alt="">
+                </a>
+                <a class="navbar-brand" href="#">SIPAK STT - NF</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-item nav-link active" href="./landing-page.html">Home</a>
+                        <a class="nav-item nav-link" href="#">Berita</a>
+                        <a class="nav-item nav-link" href="./registrasi-kendaraan.html">Registrasi Kendaraan</a>
+                        <a class="btn btn-primary ml-2" href="./login.html">Login</a>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+        <!-- End Navbar -->
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper" style="margin-top: -1rem;">
+            <input type="hidden" id="page" value="registrasi">
+            <!-- Main content -->
+            <div class="content">
+                <div class="row justify-content-center">
+                    <div class="login-box" style="margin-top: 50px;">
+                        <div class="login-logo">
+                            <a href="#"><b>SIPAK</b>STTNF</a>
+                        </div>
+                        <!-- /.login-logo -->
+                        <div class="card mb-3">
+                            <div class="card-body login-card-body">
+                                <p class="login-box-msg">Registrasi User</p>
+
+                                <form action="../../index.html" method="post">
+                                    <label for="">Cari Sivitas Akademika</label>
+                                    <span style="color: red;" id="error_cari">isi dulu bang!</span>
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" name="cari" id="cari">
+                                        <div class="input-group-append">
+                                            <div class="input-group-text">
+                                                <span class="fas fa-search"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <label for="">Nama Lengkap</label>
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" readonly name="nama" id="nama">
+                                        <div class="input-group-append">
+                                            <div class="input-group-text">
+                                                <span class="fas fa-user"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <label for="">Asal Prodi</label>
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" readonly name="prodi" id="prodi">
+                                        <div class="input-group-append">
+                                            <div class="input-group-text">
+                                                <span class="fas fa-pencil-alt"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span style="color: red;" id="error_uname">isi dulu bang!</span>
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" placeholder="Username" name="uname" id="uname">
+                                        <div class="input-group-append">
+                                            <div class="input-group-text">
+                                                <span class="fas fa-envelope"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span style="color: red;" id="error_pass">isi dulu bang!</span>
+                                    <span style="color: red;" id="error_minpass">minimal 6 karakter</span>
+                                    <div class="input-group mb-3">
+                                        <input type="password" class="form-control" placeholder="Password" name="pass" id="pass">
+                                        <div class="input-group-append">
+                                            <div class="input-group-text">
+                                                <span class="fas fa-lock"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span style="color: red;" id="error_notmatch">password tidak cocok!</span>
+                                    <span style="color: green;" id="cocok">password cocok</span>
+                                    <div id="div_repass">
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-8">
+                                        </div>
+                                        <!-- /.col -->
+
+                                        <!-- /.col -->
+                                    </div>
+                                </form>
+                                <div class="col-4">
+                                    <button type="submit" class="btn btn-primary btn-block" id="btn_daftar">Daftar</button>
+                                </div>
+                                <!-- /.social-auth-links -->
+
+                                <p class="my-3">
+                                    <a href="login.html">sudah punya akun? silahkan login</a>
+                                </p>
+                            </div>
+                            <!-- /.login-card-body -->
+                        </div>
+                    </div>
+                </div>
+                <!-- /.container-fluid -->
+            </div>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Control sidebar content goes here -->
+        </aside>
+        <!-- /.control-sidebar -->
+
+        <!-- Main Footer -->
+        <footer class="main-footer">
+            <!-- To the right -->
+            <div class="float-right d-none d-sm-inline">
+                Black_Beard
+            </div>
+            <!-- Default to the left -->
+            <strong>Copyright &copy; 2021-2022 <a href="https://nurulfikri.ac.id">STT Nurul Fikri</a>.</strong> All rights reserved.
+        </footer>
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- REQUIRED SCRIPTS -->
+
+    <!-- jQuery -->
+    <script src="https://adminlte.io/themes/v3/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="https://adminlte.io/themes/v3/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="https://adminlte.io/themes/v3/dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="https://adminlte.io/themes/v3/dist/js/demo.js"></script>
+    <!-- script custom -->
+    <script src="script.js"></script>
+</body>
+
+</html>

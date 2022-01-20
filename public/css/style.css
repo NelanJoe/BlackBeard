@@ -1,0 +1,21 @@
+.jumbotron {
+    background-color: #3074ac;
+    border-radius: 0;
+    height: hidden;
+}
+
+.nav-link {
+    transition: .2s ease-in;
+}
+
+@media (min-width: 992px) {
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: .2rem solid white;
+        width: 50%;
+        margin: auto;
+        padding-bottom: .1rem;
+        margin-bottom: -0.3rem;
+    }
+}
