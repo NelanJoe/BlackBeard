@@ -42,20 +42,30 @@ if (page == "login") {
 
     const data = [
         {
+            'nim': '0110221154',
+            'nama': 'Achmad Faisal Ghifari',
+            'prodi': 'Teknik Informatika'
+        },
+        {
             'nim': '0110221338',
             'nama': 'Ahmad Dulloh',
             'prodi': 'Teknik Informatika'
         },
         {
-            'nim': '2110221339',
-            'nama': 'Asep Bokir',
-            'prodi': 'Teknik Design'
+            'nim': '0110221203',
+            'nama': 'Muhammad Andra Fahreza',
+            'prodi': 'Teknik Informasi'
         },
         {
-            'nim': '1110221340',
-            'nama': 'Katak BizNet',
-            'prodi': 'Teknik Informasi'
-        }
+            'nim': '0110221189',
+            'nama': 'Nelan',
+            'prodi': 'Teknik Informatika'
+        },
+        {
+            'nim': '0110221186',
+            'nama': 'Raka Agus Maulana',
+            'prodi': 'Teknik Informatika'
+        },
     ];
     console.log(data);
 
