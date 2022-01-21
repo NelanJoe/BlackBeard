@@ -19,6 +19,7 @@ if (page == "login") {
 
         if (uname.value == "admin" && upass.value == "123456") {
             alert("Login sucess")
+            window.location = './index_dashboard.html'
         } 
         else if (uname.value != "admin" && upass.value == "123456") {
             alert("Username or password not corret")
