@@ -10,14 +10,25 @@ if (page == "login") {
     btn_login.addEventListener("click", function () {
         console.log(uname.value);
         console.log(upass.value);
-        if (uname.value == "admin") {
-            if (upass.value == "123456") {
-                window.location = 'home.html';
-            } else {
-                document.getElementById('error_upass').style.display = 'block';
-            }
-        } else {
+        // if (uname.value == "admin") {
+        //     if (upass.value == "123456") {
+        //         window.location = 'home.html';
+        //     } else {
+        //         document.getElementById('error_upass').style.display = 'block';
+        //     }
+
+        if (uname.value == "admin" && upass.value == "123456") {
+            alert("Login sucess")
+        } 
+        else if (uname.value != "admin" && upass.value == "123456") {
+            alert("Username or password not corret")
+        } 
+        else if (uname.value == "admin" && upass.value != "123456") {
+            alert("Username or password not corret")
+        } 
+        else {
             document.getElementById('error_uname').style.display = 'block';
+            document.getElementById('error_upass').style.display = 'block';
         }
     });
 } else if (page == "registrasi") {
@@ -108,7 +119,7 @@ if (page == "login") {
                   </div>
                 </div>
               </div>`;
-              var repass = document.getElementById('repass');
+                var repass = document.getElementById('repass');
                 if (pass.value == repass.value) {
                     document.getElementById('cocok').style.display = 'block';
                     document.getElementById('error_notmatch').style.display = 'none';
@@ -123,7 +134,7 @@ if (page == "login") {
                     </div>
                   </div>`;
 
-                  var repass = document.getElementById('repass');
+                    var repass = document.getElementById('repass');
                 }
             }
         }
